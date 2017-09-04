@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>刮刮卡demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #scratch {
+            width: 400px;
+            height: 300px;
+            text-align: center;
+            line-height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="scratch">中奖了</div>
+    <script src="../dist/scratch.min.js"></script>
+    <script>
+        window.onload = function() {
+            let scratchCard = new ScratchCard('#scratch');
+            console.log(scratchCard);
+        }
+    </script>
+</body>
+</html>
